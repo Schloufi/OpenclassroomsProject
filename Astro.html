@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet"
+		      href="styleAstro.css"/>
+		<title>Le coin Astro</title>
+		<script src="./Photo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./Astro.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body onload="init()">
+		<header>
+			<h1>Le coin Astro</h1>
+		</header>
+		
+		<div id="main-view" class="main-element">
+			<section>
+				<h2>Filtres</h2>
+				<fieldset id="filter-category" class="filterSection">
+					<legend>Catégorie</legend>
+					<div class="filter">
+						<input type="button" value="Dernières images uniquement" onclick="toggleOnlyDefault()" />
+						<input type="button" value="Système solaire" onclick="showOnlyCategorie('solarSystem')" />
+						<input type="button" value="Ciel profond" onclick="showOnlyCategorie('deepSky')" />
+						<input type="button" value="Voûte céleste" onclick="showOnlyCategorie('nightSky')" />
+					</div>
+				</fieldset>
+				<fieldset id="filter-objects" class="filterSection">
+					<legend>Objets</legend>
+				</fieldset>
+				<fieldset id="filter-scope" class="filterSection">
+					<legend>Télescope</legend>
+				</fieldset>
+				<fieldset id="filter-mount" class="filterSection">
+					<legend>Monture</legend>
+				</fieldset>
+				<fieldset id="filter-location" class="filterSection">
+					<legend>Lieu</legend>
+				</fieldset>
+				<fieldset id="filter-camera" class="filterSection">
+					<legend>Appareil</legend>
+				</fieldset>
+			</section>
+			<section id="photos" class="main-element">
+				<div id="miniatures"></div>
+				<div id="photo-container" class="main-element">
+					<img id="photo-img" />
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
