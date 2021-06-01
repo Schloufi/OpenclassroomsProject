@@ -159,7 +159,8 @@ function init() {
 							
 							let divMini = document.createElement("div");
 							divMini.setAttribute('class', 'miniature');
-							divMini.style.backgroundImage = "url('img/mini/" + photo.fileName + "')";
+							divMini.style.backgroundImage = "url('../astroData/" + categoryId + "/" + 
+								objectName.replace("'", "\\'") + "/thumb100_h/" + photo.fileName + "')";
 							
 							const img = document.createElement("img");
 							img.src = "../astroData/" + categoryId + "/" + objectName + "/thumb100_h/" + photo.fileName;
